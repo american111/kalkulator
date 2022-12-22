@@ -1,0 +1,439 @@
+
+
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+from PyQt5.QtWidgets import QMessageBox
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(400, 600)
+        MainWindow.setMinimumSize(QtCore.QSize(400, 600))
+        MainWindow.setMaximumSize(QtCore.QSize(400, 600))
+        MainWindow.setStyleSheet("background-color: rgb(0, 0, 0);")
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setMinimumSize(QtCore.QSize(410, 600))
+        self.centralwidget.setMaximumSize(QtCore.QSize(410, 600))
+        self.centralwidget.setObjectName("centralwidget")
+        self.label_natija = QtWidgets.QLabel(self.centralwidget)
+        self.label_natija.setGeometry(QtCore.QRect(0, 0, 400, 100))
+        self.label_natija.setMinimumSize(QtCore.QSize(400, 100))
+        self.label_natija.setMaximumSize(QtCore.QSize(400, 100))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.label_natija.setFont(font)
+        self.label_natija.setStyleSheet("background-color: rgb(0, 0, 0);\n"
+"color: rgb(255, 255, 255);")
+        self.label_natija.setObjectName("label_natija")
+        self.vergul = QtWidgets.QPushButton(self.centralwidget)
+        self.vergul.setGeometry(QtCore.QRect(200, 510, 90, 90))
+        self.vergul.setMinimumSize(QtCore.QSize(90, 90))
+        self.vergul.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.vergul.setFont(font)
+        self.vergul.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.vergul.setObjectName("vergul")
+        self.raqam0 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam0.setGeometry(QtCore.QRect(5, 510, 180, 90))
+        self.raqam0.setMinimumSize(QtCore.QSize(180, 90))
+        self.raqam0.setMaximumSize(QtCore.QSize(180, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam0.setFont(font)
+        self.raqam0.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.raqam0.setObjectName("raqam0")
+        self.teng = QtWidgets.QPushButton(self.centralwidget)
+        self.teng.setGeometry(QtCore.QRect(300, 510, 90, 90))
+        self.teng.setMinimumSize(QtCore.QSize(90, 90))
+        self.teng.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.teng.setFont(font)
+        self.teng.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(255, 136, 0);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(255, 136, 0);}")
+        self.teng.setObjectName("teng")
+        self.raqam2 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam2.setGeometry(QtCore.QRect(105, 410, 90, 90))
+        self.raqam2.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam2.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam2.setFont(font)
+        self.raqam2.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.raqam2.setObjectName("raqam2")
+        self.qoshuvchi = QtWidgets.QPushButton(self.centralwidget)
+        self.qoshuvchi.setGeometry(QtCore.QRect(300, 410, 90, 90))
+        self.qoshuvchi.setMinimumSize(QtCore.QSize(90, 90))
+        self.qoshuvchi.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.qoshuvchi.setFont(font)
+        self.qoshuvchi.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(255, 136, 0);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(255, 136, 0);}")
+        self.qoshuvchi.setObjectName("qoshuvchi")
+        self.raqam3 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam3.setGeometry(QtCore.QRect(205, 410, 90, 90))
+        self.raqam3.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam3.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam3.setFont(font)
+        self.raqam3.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.raqam3.setObjectName("raqam3")
+        self.raqam1 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam1.setGeometry(QtCore.QRect(10, 410, 90, 90))
+        self.raqam1.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam1.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam1.setFont(font)
+        self.raqam1.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}\n"
+"")
+        self.raqam1.setObjectName("raqam1")
+        self.raqam4 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam4.setGeometry(QtCore.QRect(10, 310, 90, 90))
+        self.raqam4.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam4.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam4.setFont(font)
+        self.raqam4.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.raqam4.setObjectName("raqam4")
+        self.raqam5 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam5.setGeometry(QtCore.QRect(105, 310, 90, 90))
+        self.raqam5.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam5.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam5.setFont(font)
+        self.raqam5.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.raqam5.setObjectName("raqam5")
+        self.ayirma = QtWidgets.QPushButton(self.centralwidget)
+        self.ayirma.setGeometry(QtCore.QRect(300, 310, 90, 90))
+        self.ayirma.setMinimumSize(QtCore.QSize(90, 90))
+        self.ayirma.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.ayirma.setFont(font)
+        self.ayirma.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(255, 136, 0);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(255, 136, 0);}")
+        self.ayirma.setObjectName("ayirma")
+        self.raqam6 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam6.setGeometry(QtCore.QRect(200, 310, 90, 90))
+        self.raqam6.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam6.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam6.setFont(font)
+        self.raqam6.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.raqam6.setObjectName("raqam6")
+        self.raqam8 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam8.setGeometry(QtCore.QRect(105, 210, 90, 90))
+        self.raqam8.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam8.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam8.setFont(font)
+        self.raqam8.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}\n"
+"")
+        self.raqam8.setObjectName("raqam8")
+        self.raqam9 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam9.setGeometry(QtCore.QRect(205, 210, 90, 90))
+        self.raqam9.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam9.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam9.setFont(font)
+        self.raqam9.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.raqam9.setObjectName("raqam9")
+        self.kopaytiruv = QtWidgets.QPushButton(self.centralwidget)
+        self.kopaytiruv.setGeometry(QtCore.QRect(305, 210, 90, 90))
+        self.kopaytiruv.setMinimumSize(QtCore.QSize(90, 90))
+        self.kopaytiruv.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.kopaytiruv.setFont(font)
+        self.kopaytiruv.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(255, 136, 0);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(255, 136, 0);}\n"
+"")
+        self.kopaytiruv.setObjectName("kopaytiruv")
+        self.raqam7 = QtWidgets.QPushButton(self.centralwidget)
+        self.raqam7.setGeometry(QtCore.QRect(10, 210, 90, 90))
+        self.raqam7.setMinimumSize(QtCore.QSize(90, 90))
+        self.raqam7.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.raqam7.setFont(font)
+        self.raqam7.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(49, 49, 49);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(0, 0, 0);}")
+        self.raqam7.setObjectName("raqam7")
+        self.boluvchi = QtWidgets.QPushButton(self.centralwidget)
+        self.boluvchi.setGeometry(QtCore.QRect(305, 110, 90, 90))
+        self.boluvchi.setMinimumSize(QtCore.QSize(90, 90))
+        self.boluvchi.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.boluvchi.setFont(font)
+        self.boluvchi.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(255, 136, 0);\n"
+"color: rgb(255, 255, 255);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(255, 255, 255);\n"
+"color: rgb(255, 136, 0);}")
+        self.boluvchi.setObjectName("boluvchi")
+        self.foiz = QtWidgets.QPushButton(self.centralwidget)
+        self.foiz.setGeometry(QtCore.QRect(205, 110, 90, 90))
+        self.foiz.setMinimumSize(QtCore.QSize(90, 90))
+        self.foiz.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.foiz.setFont(font)
+        self.foiz.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(206, 206, 206);\n"
+"color: rgb(0, 0, 0);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(118, 118, 118);}")
+        self.foiz.setObjectName("foiz")
+        self.plus_minus = QtWidgets.QPushButton(self.centralwidget)
+        self.plus_minus.setGeometry(QtCore.QRect(110, 110, 90, 90))
+        self.plus_minus.setMinimumSize(QtCore.QSize(90, 90))
+        self.plus_minus.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.plus_minus.setFont(font)
+        self.plus_minus.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(206, 206, 206);\n"
+"color: rgb(0, 0, 0);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(118, 118, 118);}")
+        self.plus_minus.setObjectName("plus_minus")
+        self.ac = QtWidgets.QPushButton(self.centralwidget)
+        self.ac.setGeometry(QtCore.QRect(10, 110, 90, 90))
+        self.ac.setMinimumSize(QtCore.QSize(90, 90))
+        self.ac.setMaximumSize(QtCore.QSize(90, 90))
+        font = QtGui.QFont()
+        font.setPointSize(25)
+        font.setBold(True)
+        font.setWeight(75)
+        self.ac.setFont(font)
+        self.ac.setStyleSheet("QPushButton{\n"
+"border-radius:45px;\n"
+"background-color: rgb(206, 206, 206);\n"
+"color: rgb(0, 0, 0);}\n"
+"QPushButton:hover{\n"
+"background-color: rgb(118, 118, 118);}")
+        self.ac.setObjectName("ac")
+        MainWindow.setCentralWidget(self.centralwidget)
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+        self.add_functions()
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.label_natija.setText(_translate("MainWindow", "0"))
+        self.vergul.setText(_translate("MainWindow", "."))
+        self.raqam0.setText(_translate("MainWindow", "0"))
+        self.teng.setText(_translate("MainWindow", "="))
+        self.raqam2.setText(_translate("MainWindow", "2"))
+        self.qoshuvchi.setText(_translate("MainWindow", "+"))
+        self.raqam3.setText(_translate("MainWindow", "3"))
+        self.raqam1.setText(_translate("MainWindow", "1"))
+        self.raqam4.setText(_translate("MainWindow", "4"))
+        self.raqam5.setText(_translate("MainWindow", "5"))
+        self.ayirma.setText(_translate("MainWindow", "-"))
+        self.raqam6.setText(_translate("MainWindow", "6"))
+        self.raqam8.setText(_translate("MainWindow", "8"))
+        self.raqam9.setText(_translate("MainWindow", "9"))
+        self.kopaytiruv.setText(_translate("MainWindow", "x"))
+        self.raqam7.setText(_translate("MainWindow", "7"))
+        self.boluvchi.setText(_translate("MainWindow", "÷"))
+        self.foiz.setText(_translate("MainWindow", "%"))
+        self.plus_minus.setText(_translate("MainWindow", "<-"))
+        self.ac.setText(_translate("MainWindow", "AC"))
+    def add_functions(self):
+        self.raqam0.clicked.connect(lambda:self.write_number(self.raqam0.text()))
+        self.raqam1.clicked.connect(lambda:self.write_number(self.raqam1.text()))
+        self.raqam2.clicked.connect(lambda:self.write_number(self.raqam2.text()))
+        self.raqam3.clicked.connect(lambda:self.write_number(self.raqam3.text()))
+        self.raqam4.clicked.connect(lambda:self.write_number(self.raqam4.text()))
+        self.raqam5.clicked.connect(lambda:self.write_number(self.raqam5.text()))
+        self.raqam6.clicked.connect(lambda:self.write_number(self.raqam6.text()))
+        self.raqam7.clicked.connect(lambda:self.write_number(self.raqam7.text()))
+        self.raqam8.clicked.connect(lambda:self.write_number(self.raqam8.text()))
+        self.raqam9.clicked.connect(lambda:self.write_number(self.raqam9.text()))
+        self.ayirma.clicked.connect(lambda:self.write_number(self.ayirma.text()))
+        self.vergul.clicked.connect(lambda:self.write_number(self.vergul.text()))
+        self.boluvchi.clicked.connect(lambda:self.write_number(self.boluvchi.text()))
+        self.qoshuvchi.clicked.connect(lambda:self.write_number(self.qoshuvchi.text()))
+        self.foiz.clicked.connect(lambda:self.write_number(self.foiz.text()))
+        self.kopaytiruv.clicked.connect(lambda:self.write_number(self.kopaytiruv.text()))
+
+        self.ac.clicked.connect(self.clear)
+        self.teng.clicked.connect(self.show)
+
+    def write_number(self, number):
+        if self.label_natija.text() == '0':
+                self.label_natija.setText(number)
+        else:
+                misol = self.label_natija.text() + number
+                self.label_natija.setText(misol)
+    def clear(self):
+        self.label_natija.clear()
+        self.label_natija.setText('0')
+
+    def show(self):
+        misol = self.label_natija.text()
+        for i in misol:
+                if i == 'x':
+                        misol = misol.replace('x','*')
+                if i =='÷':
+                        misol = misol.replace('÷','/')
+                if i == '%':
+                        misol = misol.replace('%','/100*')
+        # natija = eval(misol)
+        # if natija == int(natija):
+        #         natija = int(natija)
+        # self.label_natija.setText(str(natija))
+
+        try:
+                result = eval(misol)
+                if int(result) == float(result):
+                        result = int(result)
+                self.label_natija.clear()
+                self.label_natija.setText(str(result))
+                self.teng = True
+        except:
+                error = QMessageBox()
+                error.setWindowTitle('Xatolik')
+                error.setIcon(QMessageBox.Warning)
+                error.setText('Matematik amallar to`g`ri kiriting')
+                error.setStandardButtons(QMessageBox.Ok|QMessageBox.Cancel)
+                # error.setInformativeText('Xatolik')
+                error.exec_()    
+
+if __name__ == "__main__":
+    import sys
+    app = QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.show()
+    sys.exit(app.exec_())
